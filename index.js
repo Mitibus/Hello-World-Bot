@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 var bot = new Discord.Client();
-const token = "NDQ3NTA2MzAzNzg3NTk3ODI0.DeIl-w.jKAWyKswJVj3Kh7NfRD67AoUFbo";
+const token = process.env.TOKEN;
 
 var version = Discord.version;
 var randNum = 0;
