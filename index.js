@@ -19,10 +19,12 @@ bot.on('ready', function(){
 
 bot.on('message', message => {
     if(message.channel.id === "450703148890456094"){
-        if (verif(message)){
-            addRole(message);
-        } else {
-            console.log("Erreur lors de la verif de la présentation")
+        if (message.author.id != "159985870458322944"){
+            if (verif(message)){
+                addRole(message);
+            } else {
+                console.log("Erreur lors de la verif de la présentation")
+            }
         }
     }
 })
