@@ -17,6 +17,14 @@ bot.on('ready', function(){
 
 });
 
+bot.on('message', message => {
+  // If the message is "ping"
+  if (message.content === 'ping') {
+    // Send "pong" to the same channel
+    message.channel.send('pong');
+  }
+});
+
 bot.on('messageReactionAdd', (reaction, user) => {
     console.log("Reaction detectee")
 
