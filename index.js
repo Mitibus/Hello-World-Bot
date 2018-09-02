@@ -25,7 +25,7 @@ bot.on('message', message => {
     let command = messageArray[0];
     let args = messageArray.slice(1);  
     
-  if (command === `${prefix}addrole`){
+  if (command === `!addrole`){
         console.log(messageArray);
         console.log(command);
         console.log(args);
