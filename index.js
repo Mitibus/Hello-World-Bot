@@ -34,15 +34,16 @@ bot.on('message', message => {
             if (args.length < 2) {
                     if (message.guild.roles.find('name', args[0])){
                         message.member.addRole(message.guild.roles.find('name', args[0]));
-                        message.reply("Rôle ajouté avec succés !")
+                        message.delete();
+                        //message.reply("Rôle ajouté avec succés !")
                     }else {
-                        message.reply("Aucun role ne correspond a vôtre demande !")
+                        //message.reply("Aucun role ne correspond a vôtre demande !")
                     }
             }else{
-                message.reply("Trop d'arguments précisés !");
+                //message.reply("Trop d'arguments précisés !");
             }
         }else {
-            message.reply("Aucun rôle n'a été précisé pour être ajouté !");
+            //message.reply("Aucun rôle n'a été précisé pour être ajouté !");
         }
     }
     
